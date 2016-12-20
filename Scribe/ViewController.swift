@@ -61,6 +61,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
                             print("Error: \(error.localizedDescription)")
                         } else {
                             self.scribeTextView.text = result?.bestTranscription.formattedString
+                            // Log to console
+                            print("Output: \(result?.bestTranscription.formattedString)")
                             
                         }
                     }
