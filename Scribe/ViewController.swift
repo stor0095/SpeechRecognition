@@ -62,7 +62,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
                         } else {
                             self.scribeTextView.text = result?.bestTranscription.formattedString
                             // Log to console
-                            print("Output: \(result?.bestTranscription.formattedString)")
+                            print("Output: \(result!.bestTranscription.formattedString)")
                             
                         }
                     }
