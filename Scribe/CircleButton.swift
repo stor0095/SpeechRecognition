@@ -15,11 +15,9 @@ class CircleButton: UIButton {
         setUpView()
         }
     }
-    
     override func prepareForInterfaceBuilder() {
         setUpView()
     }
-    
     func setUpView() {
         layer.cornerRadius = cornerRadius
     }

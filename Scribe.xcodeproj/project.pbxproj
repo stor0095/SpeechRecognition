@@ -15,6 +15,10 @@
 		597443E51E08BADD00033F9D /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597443E41E08BADD00033F9D /* CircleButton.swift */; };
 		597443ED1E08CA5800033F9D /* MyAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 597443EC1E08CA5800033F9D /* MyAudio.m4a */; };
 		597443EF1E08CB0E00033F9D /* DateAudio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 597443EE1E08CB0E00033F9D /* DateAudio.m4a */; };
+		59ECCEB11E0A0A3B00FDC782 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = 59ECCEB01E0A0A3B00FDC782 /* unnamed.png */; };
+		59ECCEB31E0A0C9900FDC782 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ECCEB21E0A0C9900FDC782 /* Colors.swift */; };
+		59ECCEB51E0A216100FDC782 /* SpeechAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ECCEB41E0A216100FDC782 /* SpeechAPI.swift */; };
+		59ECCEB71E0AD2DE00FDC782 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ECCEB61E0AD2DE00FDC782 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		597443E41E08BADD00033F9D /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		597443EC1E08CA5800033F9D /* MyAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyAudio.m4a; sourceTree = "<group>"; };
 		597443EE1E08CB0E00033F9D /* DateAudio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = DateAudio.m4a; sourceTree = "<group>"; };
+		59ECCEB01E0A0A3B00FDC782 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
+		59ECCEB21E0A0C9900FDC782 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		59ECCEB41E0A216100FDC782 /* SpeechAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechAPI.swift; sourceTree = "<group>"; };
+		59ECCEB61E0AD2DE00FDC782 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,9 @@
 		597443E21E08BA9F00033F9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				59ECCEB21E0A0C9900FDC782 /* Colors.swift */,
+				59ECCEB41E0A216100FDC782 /* SpeechAPI.swift */,
+				59ECCEB61E0AD2DE00FDC782 /* UserDefaults.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -101,6 +112,7 @@
 			children = (
 				597443EC1E08CA5800033F9D /* MyAudio.m4a */,
 				597443EE1E08CB0E00033F9D /* DateAudio.m4a */,
+				59ECCEB01E0A0A3B00FDC782 /* unnamed.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -167,6 +179,7 @@
 			files = (
 				597443DA1E08B6E200033F9D /* LaunchScreen.storyboard in Resources */,
 				597443D71E08B6E200033F9D /* Assets.xcassets in Resources */,
+				59ECCEB11E0A0A3B00FDC782 /* unnamed.png in Resources */,
 				597443D51E08B6E200033F9D /* Main.storyboard in Resources */,
 				597443ED1E08CA5800033F9D /* MyAudio.m4a in Resources */,
 				597443EF1E08CB0E00033F9D /* DateAudio.m4a in Resources */,
@@ -181,8 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				597443E51E08BADD00033F9D /* CircleButton.swift in Sources */,
+				59ECCEB31E0A0C9900FDC782 /* Colors.swift in Sources */,
+				59ECCEB71E0AD2DE00FDC782 /* UserDefaults.swift in Sources */,
 				597443D21E08B6E200033F9D /* ViewController.swift in Sources */,
 				597443D01E08B6E200033F9D /* AppDelegate.swift in Sources */,
+				59ECCEB51E0A216100FDC782 /* SpeechAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +362,7 @@
 				597443E01E08B6E200033F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

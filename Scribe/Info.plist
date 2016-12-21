@@ -18,6 +18,8 @@
 	<string>1.0</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>We use speech recogniztion to analyze the audio recorded in this app.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We use your microphone to record translate your voice into text for display.</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
