@@ -39,19 +39,28 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, SFSpeechRecognize
         super.viewDidLoad()
         self.title = "Transcriber"
         self.scribeTextView.text = "Tap the record button and say something. \nChange the background color by saying the color."
-      
-        // Userdefaults
-       let savedColor =  UserDefaults.standard.color(forKey: "saveColor")
-    
-       view.backgroundColor = savedColor
-       self.scribeTextView.backgroundColor = savedColor
-        
-        playButton.isEnabled = false
-        
+        // Set speech delegate
         speechRecognizer?.delegate = self
-        
+        // Check if this is the first time this app has launched or not
+        if(UserDefaults.standard.bool(forKey: "HasLaunchedOnce")) {
+            // App has already launched before
+            // Set background color to last known color picked
+            let savedColor =  UserDefaults.standard.color(forKey: "saveColor")
+            view.backgroundColor = savedColor
+            self.scribeTextView.backgroundColor = savedColor
+        }
+        else {
+            // This is the first launch ever
+            // Set background color to white
+            UserDefaults.standard.set(true, forKey: "HasLaunchedOnce")
+            UserDefaults.standard.synchronize()
+            view.backgroundColor = UIColor.white
+            self.scribeTextView.backgroundColor = UIColor.white
+        }
+        // Disable record button until user allowes access to speech
+        playButton.isEnabled = false
+        // Request access to record speech
         requestAuthorization()
-        
     }
     
     func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
